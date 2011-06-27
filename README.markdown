@@ -1,4 +1,4 @@
-==HTML-Ipsum==
+# HTML-Ipsum
 
 Copy snippets of HTML-Code and paste them into your project.
 Visit http://www.html-ipsum.com/.
