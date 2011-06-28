@@ -1,40 +1,60 @@
-*                               { margin: 0; padding: 0; }
-body                            { font-family: Helvetica, Sans-Serif; font-size: 11px; min-width: 910px; }
+* { margin: 0; padding: 0; }
 
-a                               { text-decoration: none; }
+body {
+  font: 11px sans-serif;
+  min-width: 910px;
+  padding: 0 20px;
+}
 
-#header                         { background: #333; height: 125px; }
-#header h1                      { width: 447px; height: 125px; text-indent: -9999px; background: url(../images/logo.png) left center no-repeat; margin: 0 0 0 15px; }
-#header h2                      { font: 15px Georgia, Serif; letter-spacing: 4px; color: white; text-transform: uppercase; }
-#header span                    { font-weight: normal; }
+a { text-decoration: none; }
+
+
+
+/* Header */
+#header {
+  height: 125px;
+  background: #333;
+  margin: 0 -20px;
+}
+
+#header h1 {
+  width: 447px; height: 125px;
+  margin: 0 0 0 15px;
+  background: url(../images/logo.png) left center no-repeat;
+  text-indent: -999em;
+}
                             
-#extras                         { position: absolute; right: 0; top: 0;
-                                  width: 125px; text-align: right; }
-#extras div                     { width: 125px; float: right; }
-#extras h2                      { color: #f3c99b; }
-#extras a                       { font-family: Georgia, Serif; text-transform: uppercase;
-                                  color: white; }
-#extras #bsa a                  {  }
+#extras { position: absolute; right: 0; top: 0; width: 125px; text-align: right; }
+#extras div { width: 125px; float: right; }
+#extras h2 { color: #f3c99b; }
+#extras a { font-family: Georgia, Serif; text-transform: uppercase; color: #fff; }
 #extras a:hover,
-#extras #bsa a:hover            { background: #222; }
-#extras #bsa .adblock a:hover   { background: #222; }
+#extras #bsa a:hover,
+#extras #bsa .adblock a:hover { background: #222; }
                               
-#copied-notice                  { position: fixed; left: 50%; top: 50px;
-                                  margin: -40px 0 0 -125px; z-index: 9000;
-                                  display: none; text-indent: -9999px;
-                                  width: 250px; height: 79px;
-                                  background: url(../images/copied.png); }
+#copied-notice {
+  display: none;
+  position: fixed; left: 50%; top: 50px; z-index: 9000;
+  width: 250px; height: 79px;
+  margin: -40px 0 0 -125px;
+  background: url(../images/copied.png);
+  text-indent: -9999px;
+}
 
-textarea                        { width: 96%; border: none; margin: 5px; }
 
-fieldset                        { border: 1px solid #ccc; margin: 0 0 20px 0; }
-legend                          { padding: 3px 8px; border: 1px solid #ccc;
-                                  margin: 0 0 10px 10px; font-weight: bold; 
-                                  letter-spacing: -1px; font-size: 20px; }
 
-.col                            { width: 30%; margin: 20px 5% 0 0; float: left; overflow: hidden; }
+/* Form */
+textarea { width: 96%; border: none; margin: 5px; }
+fieldset { border: 1px solid #ccc; margin: 0 0 20px 0; }
+legend {
+  padding: 3px 8px;
+  border: 1px solid #ccc;
+  margin: 0 0 10px 10px;
+  font-weight: bold; letter-spacing: -1px; font-size: 20px;
+}
+
+.col { width: 32%; margin: 20px 2% 0 0; float: left; overflow: hidden; }
 .last { margin-right: 0; float: right; }
-#footer                         { background: #d15d00; padding: 30px;
-                                  color: white; font-size: 20px;}
-#footer a                       { color: white; font-weight: bold; }
-#footer a:hover                 { text-decoration: underline; }
+#footer { background: #d15d00; padding: 30px; color: #fff; font-size: 20px;}
+#footer a { color: #fff; font-weight: bold; }
+#footer a:hover { text-decoration: underline; }
